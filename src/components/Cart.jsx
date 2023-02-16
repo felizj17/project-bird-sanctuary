@@ -2,7 +2,7 @@ export default function Cart({ cart,total, bonus, onDelete }) {
   return (
     <div>
       <h2>Cart</h2>
-      <p>Discount: {cart.length>3?10:0}%</p>
+      <p>Discount: {cart.length>=3?10:0}%</p>
       <h4>Total: ${total}</h4>
       <ol>
         {cart.map((item,i) => (
